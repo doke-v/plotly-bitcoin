@@ -1,4 +1,4 @@
-#Plotly-bitcoin
+# Plotly-bitcoin
 
 Last 30 days of bitcoin closing prices visualized with plotly.js.
 
