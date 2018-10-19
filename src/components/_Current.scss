@@ -1,0 +1,22 @@
+.current {
+    font-family: "Open Sans", verdana, arial, sans-serif; 
+    font-size: 5em;
+    margin: 50px;
+    text-align: center;
+    @include mobile {
+        font-size: 3em;
+        margin: 10px;
+    }
+}
+
+.updated {
+    font-family: "Open Sans", verdana, arial, sans-serif; 
+    font-size: 17px;
+    margin: 5px;
+}
+
+.info {
+    font-family: "Open Sans", verdana, arial, sans-serif; 
+    font-size: 0.3em;
+    margin: 5px;
+}
