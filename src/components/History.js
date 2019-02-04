@@ -13,8 +13,7 @@ class History extends Component {
         ]}
         layout={ {title: 'Last 30 days:'} }     
         useResizeHandler = {true}
-        style = {{width: "100%", height: "100%"}}
-        
+        style = {{width: "100%", height: "100%"}} 
       />
       </div>
     );

@@ -3,6 +3,7 @@ import History from './components/History.js'
 import Current from './components/Current.js'
 class App extends Component {
   state = {history: {}, current: {}}
+
   getHistory(){
     fetch("https://api.coindesk.com/v1/bpi/historical/close.json?currency=EUR").then(res=>res.json()).then(data=>{
       this.setState({history: data.bpi})
@@ -11,8 +12,7 @@ class App extends Component {
   getCurrent(){
     fetch("https://api.coindesk.com/v1/bpi/currentprice.json").then(res=>res.json()).then(data=>{
       this.setState({current: data})
-    })
-    
+    })  
   }
 
   componentDidMount(){
@@ -20,6 +20,7 @@ class App extends Component {
     this.getCurrent()
     setInterval(()=>{
       this.getCurrent()
+      this.getHistory()
     }, 180000)
   }
   render() {
